@@ -43,6 +43,9 @@ public class AfishaTest {
             driver.findElement(By.xpath("//button[text()='Пушкинская карта']")).click();
             Assertions.assertEquals
 
+            public static ExpectedCondition<Boolean> titleIs(final String title) {
+                return new ExpectedCondition<Boolean>() {
+                    private String currentTitle = "";
         }
 
     }
